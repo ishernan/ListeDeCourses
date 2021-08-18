@@ -16,7 +16,7 @@
   <div class="conteneur">
     <header>
       <form>
-        <input type="text" name="nouvel-item" id="nouvel-item" placeholder="Nouvel item" title="Caractères autorisés : les 26 lettres en majuscules et minuscules, les espaces, les chiffres et les parenthèses (le mot doit faire minimum 2 lettres)">
+        <input type="text" name="nouvel-item" id="nouvel-item" placeholder="Nouvel item" title="Caractères autorisés : les 26 lettres en majuscules et minuscules, les espaces, les chiffres et les parenthèses (le mot doit faire minimum 2 lettres)" autofocus autocomplete="off" required pattern="[A-Za-z]0-9 ()]*[A-Za-z]{2}[A-Za-z]0-9 ()]*">
         <input id="ajouter" type="submit" class="bouton" value="Ajouter">
       </form>
     </header>
@@ -36,7 +36,7 @@
       <p class="quantite">1</p>
       <div class="select">
         <select name="unite" class="unite">
-          <option value="u.">u.</option>
+          <option value="u." selected>u.</option>
           <option value="g">g</option>
           <option value="kg">kg</option>
           <option value="L">L</option>
